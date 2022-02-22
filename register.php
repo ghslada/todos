@@ -67,7 +67,7 @@
                                                 <h6>Select your country: </h6>
                                                 <?php include_once("api/user/createUser.php");
                                                         echo'<select onChange="onCountryChange()" id="country" class="form-control mb-3" name="cep" id="inputCEP">
-                                                        <option> ------- </option>';
+                                                        <option value="0"> ------- </option>';
                                                         generateCountryOptions(); 
                                                         echo("</select>");
                                                         //NECESSARIO FECHAR O SELECT DEPOIS DE GERAR AS OPTIONS.
@@ -76,27 +76,6 @@
                                                 
                                             </div>
                                             <div><h3 id="test">A</h3></div>
-
-                                                <?php 
-
-                                                        // if(isset($_POST['Country']) && $_POST['Country']>0)
-                                                        // include_once("api/user/createUser.php");
-                                                        
-                                                        //NECESSARIO FECHAR O SELECT DEPOIS DE GERAR AS OPTIONS.
-                                                    ?>
-                                                    
-                                            <div class="form-floating mb-3">
-                                                <!-- <input class="form-control" name="cep" id="inputCEP" type="text" placeholder="96105-103" /> -->
-                                                <h6> Postal code: </h6>
-                                                <?php include_once("api/user/createUser.php");
-                                                        echo'<select id="city" class="form-control mb-3" name="cep" id="inputCEP">';
-                                                        generatePostalCodeOptions(); 
-                                                        echo("</select>");
-                                                        //NECESSARIO FECHAR O SELECT DEPOIS DE GERAR AS OPTIONS.
-                                                    ?>
-                                                    
-                                                
-                                            </div>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="telefone" id="inputTelefone" type="phone" placeholder="54 99239-4812" />
                                                 <label for="inputTelefone">Phone</label>
