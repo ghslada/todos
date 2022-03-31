@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="./css/headerStyle.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
-<body>
-    <div class="header">
-        <div class="header-inside-border">
-            <div class="header-content">
-                <logo-container><img src="../assets/logo.jpg" alt="" class="logo"></logo-container>
-            </div>
-        </div>
-    </div>
+<body id="body">
+    <?php
+
+    include_once("./header.php");
+
+   include_once("./section.php");
+
+
+    include_once("./footer.php");
+
+    ?>
 </body>
 </html>

@@ -17,8 +17,7 @@
         header('Location: '.$uri.'/dashboard/');
     }else{
         header('Location: '.$uri.'/login.php');
-        session_start();
-        $_COOKIE['token']='';
+
     }
 	exit;
 ?>

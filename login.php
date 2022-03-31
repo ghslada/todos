@@ -8,6 +8,7 @@
         <meta name="author" content="" />
         <title>Login - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/generatedHTML.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
@@ -20,13 +21,16 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <form method="post" action="verificacoes/verificarLogin.php">
+                                        <?php 
+                                        include_once(__DIR__."/api/user/login.php"); 
+                                        ?>
+                                        <form method="post">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="email" id="inputEmail" type="email" placeholder="name@example.com" />
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" name="senha" id="inputPassword" type="password" placeholder="Password" />
+                                                <input class="form-control" name="password" id="inputPassword" type="password" placeholder="Password" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
                                             <div class="form-check mb-3">
